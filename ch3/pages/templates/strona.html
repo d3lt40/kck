@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<head>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title> K0munikacja Czł0wiek K0mputer</title>
+  <meta charset="UTF-8">
+</head>
+
+{% block content %}
+<body>
+
+<div class="header">
+  <h1>K0munikacja Czł0wiek K0mputer </h1>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h3>Bramki Logiczne Explained</h3>
+
+    Współczesne komputery cyfrowe zbudowane są z milionów elementów
+  logicznych zwanych bramkami cyfrowymi lub bramkami logicznymi(ang. digital gate).
+
+     <p>Bramka logiczna – element konstrukcyjny maszyn i mechanizmów
+
+         (dziś zazwyczaj: układ scalony, choć podobne funkcje można zrealizować
+
+         również za pomocą innych rozwiązań technicznych, np. hydrauliki czy pneumatyki),
+
+          realizujący fizycznie pewną prostą funkcję logiczną, której argumenty (zmienne logiczne)
+
+          oraz sama funkcja mogą przybierać jedną z dwóch wartości,
+
+          np. 0 lub 1.<br>
+
+<br>
+
+Podstawowymi elementami logicznymi, stosowanymi powszechnie w budowie układów logicznych,
+
+są elementy realizujące funkcje logiczne: sumy (alternatywy), iloczynu (koniunkcji) i negacji.
+
+ Są to odpowiednio bramki OR, AND i NOT. Za pomocą dwóch takich bramek (OR i NOT lub AND i NOT)
+
+  można zbudować układ realizujący dowolną funkcję logiczną, układy takie nazywa się układami zupełnymi.
+
+      </p>
+
+      <h4>rodzaje bramek</h4>
+
+      <ul><li>bramka NOT</li>
+
+      <li>bramka AND</li>
+
+      <li>bramka NAND</li>
+
+      <li>bramka OR</li>
+
+      <li>bramka NOR</li>
+
+      <li>bramka XOR</li>
+
+      <li>bramka XNOR</li>
+
+      <li>bramka trójstanowa</li></ul>
+
+  <p>masz jakieś mądre rzeczy do napisania o bramkach logicznych?
+
+  <br>pisz do mnie na maila
+
+  (na pewno przeczytam)</p>
+
+      <form enctype="text/plain" action="mailto:delfinachmiel@gmail.com?subject=k0munikacjaczl0wiekk0mputer"
+
+       method="post">
+
+     Imię:
+
+     <br>
+
+     <input type="text" name="firstname" value="">
+
+
+
+     <p>
+
+         tu wpisz wiadomość:
+
+        <br>
+
+        <textarea name="content" rows="15" cols="55"></textarea>
+
+    </p>
+
+    <input type="submit" value="wyślij">
+
+</form>
+
+
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <img src="{% static "css/bramki.jpg" %}" alt="rysuneczek tu miał być" title="rysuneczek" width="200" height="240">
+            <p>Bramki logiczne, rysuneczek</p>
+            <br>
+            <table border = "5">
+
+              <caption><strong>TABELA WARTOŚCI</strong></caption>
+
+      <tr><th><strong>p</strong></th><th><strong>q</strong></th><th>NOT<br> q</th><th>NOT <br>p</th>
+
+      <th>AND</th><th>XOR</th><th>OR</th><th>NOR</th><th>XNOR</th></tr>
+
+      <tr></tr><tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+
+      <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+
+      <tr><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td></tr>
+
+      <tr><td>1</td><td>1</td><td>0</td><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>1</td></tr>
+
+            </table>
+       <br>
+      <br>
+            <p> możesz sobie <a href="https://eduinf.waw.pl/inf/alg/002_struct/0012.php">tutaj</a>
+
+               poczytać o bramkach logicznych, super zabawa, polecam.
+			   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+ta strona musi zostać taka brzydka, bo jest super i mam do niej sentyment
+</div>
+
+</body>
+{% endblock content %}
