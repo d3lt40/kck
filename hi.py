@@ -8,6 +8,6 @@ mojeDane = dane['Sub02']
 przefiltrowany= ag.pasmowozaporowy(mojeDane, 256, 49, 51)
 przefiltrowany=ag.gornoprzepustowy(mojeDane, 256, 3)
 ag.spektrogram(przefiltrowany, 256)
-## 8hz 8-20 seksunDA
-plt.plot(mojeDane)
-plt.show()
+ag.rysujFFT(przefiltrowany[8*256:20*256])
+## 8hz 8-20 sekunda
+##podpisy dodać - os x i y
